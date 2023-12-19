@@ -17,14 +17,17 @@ const userSchema = new Schema({
         required: true,
         unique: true
     },
-    phoneNumber: {
+    password: {
         type: String,
         required: true,
-        unique: false,
+        minlength: 4,
+        maxlength: 60,
+        unique: false
     },
     account: [{
         type: Schema.Types.ObjectId,
-        ref: 'Account'
+        ref: 'Account',
+        required: false
     }],
     created_at: { 
         type: Date, 
