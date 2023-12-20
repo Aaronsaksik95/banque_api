@@ -24,7 +24,7 @@ const userSchema = new Schema({
         maxlength: 60,
         unique: false
     },
-    account: [{
+    accounts: [{
         type: Schema.Types.ObjectId,
         ref: 'Account',
         required: false

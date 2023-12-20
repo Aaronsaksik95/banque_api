@@ -14,21 +14,30 @@ const operationSchema = new Schema({
         enum: ['accepted', 'denied'],
         unique: false
     },
+    amount: {
+        type: Number,
+        required: true
+    },
     user: {
         type: Schema.Types.ObjectId,
         ref: 'User',
         required: true
     },
-    issuingAccount: [{
+    sendingAccount: {
         type: Schema.Types.ObjectId,
         ref: 'Account',
         required: true
-    }],
-    receivingAccount: [{
+    },
+    receivingAccount: {
         type: Schema.Types.ObjectId,
         ref: 'Account',
         required: false
-    }],
+    },
+    created_at: {
+        type: Date,
+        required: true,
+        default: Date.now
+    },
 })
 
 export default model('Operation', operationSchema);

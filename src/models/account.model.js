@@ -12,6 +12,16 @@ const accountSchema = new Schema({
         required: true,
         unique: false,
     },
+    overdraft: {
+        type: Number,
+        required: true,
+        unique: false,
+    },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        required: false
+    },
     created_at: { 
         type: Date, 
         required: true,
