@@ -1,13 +1,9 @@
 import { Router } from 'express';
-const router = Router();
-
+import verifyToken from '../middlewares/verifyToken.js'
 import { getAllOperation, getOperationId, createOperation, updateOperation, deleteOperation } from '../controllers/operations.controller.js';
 
-router.get('/', getAllOperation);
-router.get('/:id', getOperationId);
-router.post('/', createOperation);
-router.put('/:id', updateOperation);
-router.delete('/:id', deleteOperation);
+const router = Router();
 
+router.get('/', verifyToken, getAllOperation);
 
 export default router;
