@@ -2,7 +2,12 @@
 
 ## Présentation de l'application.
 
-Cette application bancaire offre la possibilité de créer un compte user et d'établir plusieurs comptes bancaires associés. Les utilisateurs peuvent y déposer des fonds, effectuer des retraits, et réaliser des transferts d'argent entre leurs différents comptes. Chaque transaction réalisée, que ce soit un dépôt, un retrait ou un transfert, génère automatiquement une nouvelle opération qui est immédiatement ajoutée à l'historique des transactions du compte concerné.
+Cette API REST FULL permet la création d'une application bancaire coté Backend.
+- Création compte user et comptes bancaires associés.
+- Déposer des fonds.
+- Effectuer des retraits.
+- Réaliser des transferts entre ses comptes. 
+- Historique quelque soit la transaction.
 
 ## Installation et lancement de l'app.
 
