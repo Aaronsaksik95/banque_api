@@ -10,5 +10,7 @@ SECRET_JWT="ITINOVBANQUEAPI"`
 
 ### 2. Commandes:
 
-```npm install
-npm run dev```
+```
+npm install
+npm run dev
+```
