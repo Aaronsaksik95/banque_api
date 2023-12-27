@@ -1,4 +1,5 @@
 import { Schema as _Schema, model } from 'mongoose';
+
 const Schema = _Schema;
 
 const accountSchema = new Schema({
@@ -22,6 +23,11 @@ const accountSchema = new Schema({
         ref: 'User',
         required: false
     },
+    operations: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Operation',
+        required: false
+    }],
     created_at: { 
         type: Date, 
         required: true,

@@ -1,10 +1,10 @@
+import { connectDb } from './services/mongoose.service.js';
+import apiRouter from './routes/index.js';
+
 import "dotenv/config.js";
 import express from 'express';
 import cors from 'cors';
-import apiRouter from './routes/index.js';
 import bodyParser from 'body-parser';
-import { connectDb } from './services/mongoose.service.js';
-
 
 const app = express();
 const { json } = bodyParser;
