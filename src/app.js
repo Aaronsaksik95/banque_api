@@ -1,7 +1,8 @@
+import "dotenv/config.js";
+
 import { connectDb } from './services/mongoose.service.js';
 import apiRouter from './routes/index.js';
 
-import "dotenv/config.js";
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
